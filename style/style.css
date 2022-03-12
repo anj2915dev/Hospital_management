@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.item__side {
+  @apply w-full mt-1  h-14  text-center  hover:scale-[1.01] delay-150  transition-all ease-in-out rounded-md overflow-hidden;
+}
+.text__side {
+  @apply hover:bg-[#1b32c7] text-white text-center py-4 block;
+}
+.side__bar{
+  @apply  w-1/5 bg-[#3445b4]  h-full rounded-tl-sm rounded-bl-sm;
+}
