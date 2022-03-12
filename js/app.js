@@ -1,15 +1,27 @@
-function roter() {
-  const roters = [
-    { path: "/", view: console.log("aaaaa") },
-    { path: "/post", view: console.log("aaaaa") },
-    { path: "/products", view: console.log("aaaaa") },
+function route() {
+  const routes = [
+    { path: "/", view: () => console.log("dashbor dpage") },
+    { path: "/post", view: () => console.log("post page") },
+    { path: "/products", view: () => console.log("products page") },
   ];
-  const potentialRoters = roters.map((itme) => {
+  const potentialRoters = routes.map((itme) => {
     return {
-      rout: itme,
+      route: itme,
       ismatch: location.pathname === itme.path,
     };
   });
-  console.log(potentialRoters);
+
+  // get ismatch=true
+  const match = potentialRoters.find((route) => route.ismatch);
+  console.log(match.route.view());
+  // if not match
+  if (!match) {
+    match = {
+      route: { path: "/not-found", view: () => console.log("not-found page") },
+    };
+  }
 }
-roter();
+
+document.addEventListener("DOMContentLoaded", () => {
+  route();
+});
