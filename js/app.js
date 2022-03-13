@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.addEventListener("click", (e) => {
     if (e.target.hasAttribute("href")) {
       e.preventDefault();
+      console.log(e.target.href)
       navGtion(e.target.href);
     }
   });

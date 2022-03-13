@@ -2,11 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 .item__side {
-  @apply w-full mt-1  h-14  text-center  hover:scale-[1.01] delay-150  transition-all ease-in-out rounded-md overflow-hidden;
+  @apply w-full border-b border-[#4958bc] hover:bg-[#1b32c7] flex  justify-center  text-center items-center  delay-150  transition-all ease-in-out  overflow-hidden;
 }
 .text__side {
-  @apply hover:bg-[#1b32c7] text-white text-center py-4 block;
+  @apply w-full text-white text-right  py-3 px-3  ;
 }
 .side__bar{
   @apply  bg-[#3445b4]  h-full rounded-tl-sm rounded-bl-sm transition-all delay-100 ;
+}
+.icon__sid{
+  @apply mx-1 text-white h-8 w-8
 }
