@@ -8,5 +8,5 @@
   @apply hover:bg-[#1b32c7] text-white text-center py-4 block;
 }
 .side__bar{
-  @apply  w-1/5 bg-[#3445b4]  h-full rounded-tl-sm rounded-bl-sm;
+  @apply  bg-[#3445b4]  h-full rounded-tl-sm rounded-bl-sm transition-all delay-100 ;
 }

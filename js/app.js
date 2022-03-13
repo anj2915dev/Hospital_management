@@ -1,8 +1,11 @@
+import Dashbord from "./pages/Dashbord.js";
+import Post from "./pages/Post.js";
+import Product from "./pages/Product.js";
 function route() {
   const routes = [
-    { path: "/", view: () => console.log("dashbor dpage") },
-    { path: "/post", view: () => console.log("post page") },
-    { path: "/products", view: () => console.log("products page") },
+    { path: "/", view: () => Dashbord() },
+    { path: "/post", view: () => Post() },
+    { path: "/products", view: () => Product() },
   ];
   const potentialRoters = routes.map((itme) => {
     return {
@@ -20,8 +23,21 @@ function route() {
       route: { path: "/not-found", view: () => console.log("not-found page") },
     };
   }
+  document.querySelector("#app").innerHTML = match.route.view();
 }
 
+function navGtion(url) {
+  history.pushState("", "", url);
+  route();
+}
+window.addEventListener("popstate", route());
+
 document.addEventListener("DOMContentLoaded", () => {
+  document.body.addEventListener("click", (e) => {
+    if (e.target.hasAttribute("href")) {
+      e.preventDefault();
+      navGtion(e.target.href);
+    }
+  });
   route();
 });
