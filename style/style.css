@@ -13,3 +13,6 @@
 .icon__sid {
   @apply mx-1 text-white h-8 w-8
 }
+.header{
+@apply p-2 px-5 transition-all w-full h-16 flex justify-between flex-row-reverse items-center   shadow-lg   rounded-b-lg overflow-hidden
+}

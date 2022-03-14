@@ -1,4 +1,3 @@
-
 const toggler = document.querySelector(".toggler");
 const sideBar = document.querySelector(".side__bar");
 const btn = document.querySelector(".btn");
@@ -18,7 +17,13 @@ toggler.addEventListener("click", () => {
 btn.addEventListener("click", getData);
 
 function getData() {
-  fetch("https://reqres.in/api/users",{method:"GET"}).then((respans) => {
-    return respans.json();
-  }).then(data=>console.log(data))
+  fetch("https://reqres.in/api/users", { method: "GET" })
+    .then((respans) => {
+      return respans.json();
+    })
+    .then((data) => {
+      data.data.forEach((element) => {
+        console.log(element.id);
+      });
+    });
 }
