@@ -3,7 +3,7 @@ import Post from "./pages/Post.js";
 import Product from "./pages/Product.js";
 function route() {
   const routes = [
-    { path: "/", view: () => Dashbord() },
+    { path: "/", view: () => Dashbord.dashbordUi() },
     { path: "/post", view: () => Post() },
     { path: "/products", view: () => Product() },
   ];
@@ -23,7 +23,9 @@ function route() {
       route: { path: "/not-found", view: () => console.log("not-found page") },
     };
   }
+
   document.querySelector("#app").innerHTML = match.route.view();
+  Dashbord.inputEmail();
 }
 
 function navGtion(url) {
