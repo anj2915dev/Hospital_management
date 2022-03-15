@@ -1,18 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.item__side {
-  @apply w-full border-b  border-[#4958bc] hover:bg-[#1b32c7] flex  justify-center  text-center items-center  delay-150  transition-all ease-in-out;
-}
+
 .text__side {
-  @apply w-full text-white text-right  py-3 px-3 focus:before:bg-white focus:before:absolute focus:before:h-full before:w-0 focus:text-slate-600 z-50 before:z-0 focus:before:w-full relative focus:before:-left-3 focus:before:top-0 focus:before:rounded-r-sm before:transition-all before:delay-150  before:ease-in;
+  @apply w-full z-30 text-white text-right border-b  py-3 px-3 before:w-0 before:top-0 before:left-0 before:h-full before:absolute before:bg-white focus:text-[#3445b4]   relative before:z-40  focus:before:w-full before:transition-all before:delay-200;
 }
 .side__bar {
   @apply bg-[#3445b4]  h-full rounded-tl-sm rounded-bl-sm transition-all delay-100;
 }
 .icon__sid {
-  @apply mx-1 text-white h-8 w-8
+  @apply ml-2 z-50  h-8 w-8;
 }
-.header{
-@apply p-2 px-5 transition-all w-full h-16 flex justify-between flex-row-reverse items-center   shadow-lg   rounded-b-lg overflow-hidden
+.header {
+  @apply p-2 px-5 transition-all w-full h-16 flex justify-between flex-row-reverse items-center   shadow-lg   rounded-b-lg overflow-hidden;
 }
