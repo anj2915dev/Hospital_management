@@ -2,15 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.text__side {
-  @apply w-full z-30 text-white text-right border-b  py-3 px-3 before:w-0 before:top-0 before:left-0 before:h-full before:absolute before:bg-white focus:text-[#3445b4]   relative before:z-40  focus:before:w-full before:transition-all before:delay-200;
-}
+
 .side__bar {
   @apply bg-[#3445b4]  h-full rounded-tl-sm rounded-bl-sm transition-all delay-100;
 }
-.icon__sid {
-  @apply ml-2 z-50  h-8 w-8;
-}
+
 .header {
   @apply p-2 px-5 transition-all w-full h-16 flex justify-between flex-row-reverse items-center   shadow-lg   rounded-b-lg overflow-hidden;
 }
