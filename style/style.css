@@ -2,11 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
+.item__menu {
+  @apply hover:shadow-xl  sm:block  border-b border-[#4958bc] overflow-hidden hover:text-white mt-2 hover:bg-[#055cf248] transition-all  ease-in-out hover:border-none hover:rounded-md w-full  p-2;
+}
+.link__menu {
+  @apply flex justify-between  items-center text-white text-xl;
+}
+.parent__link {
+  @apply flex items-center  w-full  justify-end text-right;
+}
+.text__link {
+  @apply transition-all w-full   hover:text-white text-lg mr-1;
+}
+.icon__menu {
+  @apply ml-2  transition-all;
+}
+
+.child__menu {
+  @apply h-0 opacity-0 rounded-md bg-[#382dd6] scale-75 hover:scale-100 overflow-hidden  mt-1 border-[#4958bc]    text-right px-5  transition-all   text-white;
+}
+.item__child {
+  @apply w-full flex items-center justify-end  hover:text-white py-1;
+}
+.text__child {
+  @apply hover:-translate-x-2 delay-150 w-full transition-all ease-in-out;
+}
+.icon__size {
+  @apply text-4xl mr-0.5;
+}
 
 .side__bar {
-  @apply bg-[#3445b4]  h-full rounded-tl-sm rounded-bl-sm transition-all delay-100;
+  @apply bg-[#3445b4] sm:px-1  box-border h-full rounded-tl-sm  rounded-bl-sm transition-all delay-100;
+}
+.toggler {
+  @apply transition-all bg-[#3445b4] h-10 w-10 rounded-md  -right-5 top-3 bottom-0 absolute  flex  items-center  rotate-45    text-white  uppercase font-bold  z-50;
 }
 
 .header {
-  @apply p-2 px-5 transition-all w-full h-16 flex justify-between flex-row-reverse items-center   shadow-lg   rounded-b-lg overflow-hidden;
+  @apply p-2 px-5 transition-all w-full bg-white h-16 flex justify-between flex-row-reverse items-center   shadow-lg   rounded-b-lg overflow-hidden;
+}
+.show {
+  @apply h-auto w-full  opacity-100 transition-all  scale-100;
+}
+.activ {
+  @apply bg-[#055cf248] shadow-md rounded-md border-none text-white;
+}
+.hidd__item {
+  @apply sm:hidden px-5 ml-0.5 sm:px-0 sm:-translate-x-6 sm:w-0 sm:overflow-hidden;
+}
+.showToltip {
+  @apply bg-blue-500  transition-all ease-in-out scale-0;
+}
+.acrivToltip {
+  @apply bg-blue-500 inline transition-all ease-in-out scale-105  translate-y-0 opacity-100;
+}
+
+.content {
+  @apply grid grid-cols-1  sm:grid-cols-2 md:flex md:justify-center gap-10 mt-10  w-full h-full;
+}
+.item__content {
+  @apply h-60 rounded-md  text-center bg-white  mx-1 sm:mx-0  md:p-8   shadow-lg cursor-pointer hover:scale-[1.02] sm:hover:scale-105 transition-all flex  flex-col justify-evenly items-center;
+}
+.number__content {
+  @apply text-4xl font-bold text-slate-700 md:mt-4;
+}
+.text__content {
+  @apply text-2xl  text-[#919ba5];
 }

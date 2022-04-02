@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 
 <head>
     <meta charset="UTF-8">
@@ -14,50 +14,309 @@
 </head>
 <!-- focus:before:bg-white focus:before:absolute focus:before:h-full before:w-0 focus:text-slate-600 z-50 before:z-10 focus:before:w-full relative focus:before:-left-3 focus:before:top-0 focus:before:rounded-r-sm before:transition-all before:delay-150  before:ease-in -->
 
-<body class="  h-[105vh] bg-gray-50   p-5 ">
-  
-
-
-    <div class=" rounded-xl  mb-3 h-screen  w-full  overflow-hidden flex  flex-row-reverse ">
-        <div class="side__bar relative w-1/5  ">
-            <button
-                class="toggler h-15 w-15  absolute border-4  -left-7 bottom-5 rounded-full  text-white  uppercase font-bold  z-50 bg-[#3445b4] "><svg
-                    xmlns="http://www.w3.org/2000/svg" class="icon__toggler h-10 w-10 transition-all "
-                    viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd"
-                        d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                        clip-rule="evenodd" />
-                </svg></button>
-            <div class=" w-full p-1 mt-4 text-center">
+<body class="  sm:h-[100vh] bg-gray-50   sm:p-5 ">
 
 
 
-                <h1 class=" text-4xl text-white font-bold tracking-wider ">
+    <div class=" rounded-xl relative mb-3 h-full overflow-hidden w-full   flex  flex-row-reverse ">
+
+        <div class="side__bar    scrollbar sm:scrollbar-thin    z-50  sm:relative sm:w-1/5 w-0 fixed   ">
+
+
+            <div class=" w-full p-1 flex  flex-row-reverse items-center  justify-around mt-4 text-center">
+
+
+                <img src="images/logo.png" class=" w-12 h-12" alt="">
+                <h1
+                    class="togller__menu overflow-hidden transition-all  ml-8 text-4xl text-white font-bold tracking-wider ">
                     مدیریت
                 </h1>
-            </div>
-            <ul class=" w-full h-full  p-2 mt-5">
-                <li
-                    class="btn__menu  w-full  text-[#aeafdd]    px-3  hover:rounded-md  hover:border-none transition-all">
-                    <span class=" w-full p-1 flex items-center px-2 border-b border-[#4958bc] hover:border-none transition-all">
-                        <a href="" class="text__menu w-full h-full mr-2   p-1 text-right">خانه</a>
-                        <i class='icon__menu  bx bxs-home-alt-2 text-xl text-[#3796eb]'></i>
-                    </span>
+                <!-- bg-[#3445b4] -->
 
-                    <ul class=" p-1 py-2 rounded-sm before:w-5 before:h-5 before:bg-[#394cc9] before:absolute before:-top-2 before:left-[48%] before:rotate-45 relative px-3 text-right bg-[#394cc9] mt-3 ">
-                        <li class=" w-full py-1 px-3 flex items-center justify-end hover:text-white">
-                            <a href="/## " class="w-full mr-1 hover:-translate-x-2 transition-all">خانه منو</a>
-                            <i class='bx bxs-chevrons-left'></i>
+            </div>
+            <ul class="p-2 mt-5 ">
+                <li class="item__menu text-white mt-2  ">
+                    <a href="#" class="link__menu ">
+
+                        <span></span>
+
+
+                        <span class="parent__link">
+                            <span class="togller__menu text__link  text-[#a6b5e0]">خانه</span>
+                            <i class='icon__menu bx bx-home-smile'></i>
+                        </span>
+
+                        <!-- color icon text-[#44bef1] -->
+                        <!-- color text text-[#9a8aba] -->
+                    </a>
+                    <ul class=" hidden">
+
+                    </ul>
+
+
+
+                </li>
+
+                <li class="item__menu ">
+                    <a href="#" class="link__menu">
+
+                        <i class=' icon__down togller__menu bx bxs-chevron-down transition-all '></i>
+
+
+                        <span class="parent__link">
+                            <span class="togller__menu text__link  text-[#a6b5e0]">آمار</span>
+                            <i class='icon__menu bx bx-bar-chart-square'></i>
+                        </span>
+                        <!-- color icon text-[#44bef1] -->
+                        <!-- color text text-[#9a8aba] -->
+                    </a>
+
+
+                    <ul class="child__menu togller__menu">
+                        <li class="item__child ">
+                            <a href=" #" class="text__child"> نمودار</a>
+
+                            <i class='bx bx-chevrons-left text-cyan-200 '></i>
+                        </li>
+                        <li class="item__child ">
+                            <a href=" #" class="text__child"> لیست خدمات</a>
+
+                            <i class='bx bx-chevrons-left text-cyan-400 '></i>
+                        </li>
+                        <li class="item__child ">
+                            <a href=" #" class="text__child"> لیست خدمات سال</a>
+
+                            <i class='bx bx-chevrons-left text-cyan-400 '></i>
                         </li>
                     </ul>
+
                 </li>
+                <li class="item__menu">
+                    <a href="#" class="link__menu">
+
+                        <i class=' icon__down togller__menu bx bxs-chevron-down transition-all '></i>
+
+
+                        <span class="parent__link">
+                            <span class="togller__menu text__link  text-[#a6b5e0]">معرفی</span>
+                            <i class='icon__menu bx bxs-user-plus'></i>
+                        </span>
+                        <!-- color icon text-[#44bef1] -->
+                        <!-- color text text-[#9a8aba] -->
+                    </a>
+
+
+                    <ul class="child__menu togller__menu">
+                        <li class="item__child ">
+                            <a href="" class="text__child">افزودن مکان</a>
+
+                            <i class='bx bx-chevrons-left text-cyan-200 '></i>
+                        </li>
+                        <li class="item__child ">
+                            <a href=" #" class="text__child"> افزودن کادر درمان</a>
+
+                            <i class='bx bx-chevrons-left text-cyan-400 '></i>
+                        </li>
+                        <li class="item__child ">
+                            <a href=" #" class="text__child"> افزودن بازاریاب</a>
+
+                            <i class='bx bx-chevrons-left text-cyan-400 '></i>
+                        </li>
+                        <li class="item__child ">
+                            <a href=" #" class="text__child">افزودن پرسنل</a>
+
+                            <i class='bx bx-chevrons-left text-cyan-400 '></i>
+                        </li>
+                        <li class="item__child ">
+                            <a href=" #" class="text__child">اپراتورها</a>
+
+                            <i class='bx bx-chevrons-left text-cyan-400 '></i>
+                        </li>
+                    </ul>
+
+                </li>
+                <li class="item__menu ">
+                    <a href="#" class="link__menu ">
+
+                        <i class=' icon__down togller__menu bx bxs-chevron-down transition-all '></i>
+
+
+                        <span class="parent__link">
+                            <span class="togller__menu text__link  text-[#a6b5e0]">لیست معرف</span>
+                            <i class='icon__menu bx bx-list-ol'></i>
+                        </span>
+                        <!-- color icon text-[#44bef1] -->
+                        <!-- color text text-[#9a8aba] -->
+                    </a>
+
+
+                    <ul class="child__menu togller__menu">
+                        <li class="item__child ">
+                            <a href=" #" class="text__child"> مکانی</a>
+
+                            <i class='bx bx-chevrons-left text-cyan-200 '></i>
+                        </li>
+                        <li class="item__child ">
+                            <a href=" #" class="text__child"> کادر درمان</a>
+
+                            <i class='bx bx-chevrons-left text-cyan-400 '></i>
+                        </li>
+                        <li class="item__child ">
+                            <a href=" #" class="text__child"> بازاریاب</a>
+
+                            <i class='bx bx-chevrons-left text-cyan-400 '></i>
+                        </li>
+                        <li class="item__child ">
+                            <a href=" #" class="text__child"> کاربر عادی</a>
+
+                            <i class='bx bx-chevrons-left text-cyan-400 '></i>
+                        </li>
+
+                    </ul>
+
+                </li>
+                <li class="item__menu ">
+                    <a href="#" class="link__menu ">
+
+                        <i class=' icon__down togller__menu bx bxs-chevron-down transition-all '></i>
+
+
+                        <span class="parent__link">
+                            <span class="togller__menu text__link  text-[#a6b5e0]">افزودن</span>
+                            <i class='icon__menu bx bx-list-plus'></i>
+                        </span>
+                        <!-- color icon text-[#44bef1] -->
+                        <!-- color text text-[#9a8aba] -->
+                    </a>
+
+
+                    <ul class="child__menu togller__menu">
+                        <li class="item__child ">
+                            <a href="page/addCity.html" class="text__child">استان و شهر</a>
+
+                            <i class='bx bx-chevrons-left text-cyan-200 '></i>
+                        </li>
+                        <li class="item__child ">
+                            <a href=" #" class="text__child"> نوع مکان</a>
+
+                            <i class='bx bx-chevrons-left text-cyan-400 '></i>
+                        </li>
+                        <li class="item__child ">
+                            <a href=" #" class="text__child"> رشته تحصیلی</a>
+
+                            <i class='bx bx-chevrons-left text-cyan-400 '></i>
+                        </li>
+                        <li class="item__child ">
+                            <a href=" #" class="text__child">شناسه</a>
+
+                            <i class='bx bx-chevrons-left text-cyan-400 '></i>
+                        </li>
+                        <li class="item__child ">
+                            <a href=" #" class="text__child"> سمت </a>
+
+                            <i class='bx bx-chevrons-left text-cyan-400 '></i>
+                        </li>
+                        <li class="item__child ">
+                            <a href=" #" class="text__child">مدارک</a>
+
+                            <i class='bx bx-chevrons-left text-cyan-400 '></i>
+                        </li>
+                        <li class="item__child ">
+                            <a href=" #" class="text__child">سوابق بیماری</a>
+
+                            <i class='bx bx-chevrons-left text-cyan-400 '></i>
+                        </li>
+                        <li class="item__child ">
+                            <a href=" #" class="text__child">داروها</a>
+
+                            <i class='bx bx-chevrons-left text-cyan-400 '></i>
+                        </li>
+                        <li class="item__child ">
+                            <a href=" #" class="text__child">به لیست خدمات</a>
+
+                            <i class='bx bx-chevrons-left text-cyan-400 '></i>
+                        </li>
+                        <li class="item__child ">
+                            <a href=" #" class="text__child">به لیست تجهیزات</a>
+
+                            <i class='bx bx-chevrons-left text-cyan-400 '></i>
+                        </li>
+                    </ul>
+
+                </li>
+                <li class="item__menu">
+                    <a href="#" class="link__menu">
+
+                        <i class=' icon__down togller__menu bx bxs-chevron-down transition-all '></i>
+
+
+                        <span class="parent__link">
+                            <span class="togller__menu text__link  text-[#a6b5e0]">پیام ها</span>
+                            <i class='icon__menu bx bxs-message-detail'></i>
+                        </span>
+                        <!-- color icon text-[#44bef1] -->
+                        <!-- color text text-[#9a8aba] -->
+                    </a>
+
+
+                    <ul class="child__menu togller__menu">
+                        <li class="item__child ">
+                            <a href=" #" class="text__child"> ارسال پیام</a>
+
+                            <i class='bx bx-chevrons-left text-cyan-200 '></i>
+                        </li>
+
+                    </ul>
+
+                </li>
+                <li class="item__menu">
+                    <a href="#" class="link__menu">
+
+                        <i class=' icon__down togller__menu bx bxs-chevron-down transition-all '></i>
+
+
+                        <span class="parent__link">
+                            <span class="togller__menu text__link  text-[#a6b5e0]">ادمین</span>
+                            <i class='icon__menu bx bxs-user-rectangle'></i>
+                        </span>
+                        <!-- color icon text-[#44bef1] -->
+                        <!-- color text text-[#9a8aba] -->
+                    </a>
+
+
+                    <ul class="child__menu togller__menu">
+                        <li class="item__child ">
+                            <a href=" #" class="text__child"> تنظیمات</a>
+
+                            <i class='bx bx-chevrons-left text-cyan-200 '></i>
+                        </li>
+                        <li class="item__child ">
+                            <a href=" #" class="text__child"> سطح دسترسی</a>
+
+                            <i class='bx bx-chevrons-left text-cyan-400 '></i>
+                        </li>
+                    </ul>
+
+                </li>
+
+
+
+
             </ul>
+
         </div>
 
-        <div class="  w-full h-full bg-white rounded-sm px-4">
+        <div class="  w-full h-full  p-5 bg-white rounded-sm  px-4">
 
-            <header class="header">
-                <div class="p-2 w-64 rounded-full flex items-center justify-evenly flex-row-reverse bg-gray-50">
+            <header class="header relative">
+
+                <button class="toggler   ">
+                    <i
+                        class='icon__toggler bx bx-chevron-left bx-rotate-45   rotate-[130deg] text-4xl  absolute -left-1 -bottom-1  transition-all '></i>
+
+                </button>
+
+                <!-- <div class="p-2 mr-5 w-64 rounded-full flex items-center justify-evenly flex-row-reverse bg-gray-50">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-slate-600" viewBox="0 0 20 20"
                         fill="currentColor">
                         <path fill-rule="evenodd"
@@ -65,18 +324,53 @@
                             clip-rule="evenodd" />
                     </svg>
                     <input type="text" class="outline-none border-none bg-gray-50  text-right p-1 ">
+                </div> -->
+ 
+                <div class=" flex flex-row-reverse mx-6 text-slate-500 ">
+                    <h2 class=" font-bold ">
+                        :آخرین ورود
+                    </h2>
+                    <h2 class="mx-3"> 
+12/12/1400
+                    </h2>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 text-purple-700" viewBox="0 0 20 20"
-                    fill="currentColor">
-                    <path fill-rule="evenodd"
-                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
-                        clip-rule="evenodd" />
-                </svg>
+
+                <span class=" title__user  flex items-center flex-row-reverse">
+                    <h1 class="user text-slate-400 ">طب رستا</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 text-purple-700" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </span>
             </header>
 
+            <!-- bg-[#3445b4] -->
+            <section id="app" class="h-full  sm:p-0 w-full relative  ">
+                <span
+                    class="toltip__menu    cursor-pointer  duration-300 transition z-0 -translate-y-10 ease-in-out before:bg-blue-500 text-white   absolute px-1 py-1 delay-200 -top-12 opacity-0 my-3 -right-3 rounded-md before:w-3 before:-top-1 before:right-[38%] before:rotate-45 before:h-3 before:absolute ">
+                    داشبورد
+                </span>
 
-            <section class="" id="app" class="flex">
+                <div class="content">
+                    <div class="item__content">
+                        <img src="./images/Onboarding-amico.png" class="  w-36" alt="">
+                        <h2 class="text__content]">کدهای معرف پرسنل</h2>
+                        <h3 class="number__content  text-4xl font-bold text-slate-700">5</h3>
+                    </div>
+                    <div class="item__content">
+                        <img src="./images/Businessman-pana.png" class="  w-36" alt="">
+                        <h2 class="text__content]">کدهای معرف فردی</h2>
+                        <h3 class="number__content  text-4xl font-bold text-slate-700">5</h3>
+                    </div>
+                    <div class="item__content">
+                        <img src="./images/Usability testing-pana.png" class="  w-36" alt="">
+                        <h2 class="text__content]">کدهای معرف مکانی</h2>
+                        <h3 class="number__content  text-4xl font-bold text-slate-700">5</h3>
+                    </div>
 
+                </div>
 
             </section>
 
@@ -84,7 +378,7 @@
 
     </div>
 
-    <script src="js/index.js"></script> -->
+    <script src="js/index.js"></script>
 </body>
 
 </html>
