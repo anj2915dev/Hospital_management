@@ -37,6 +37,9 @@
 .toggler {
   @apply transition-all bg-[#3445b4] h-10 w-10 rounded-md  -right-5 top-3 bottom-0 absolute  flex  items-center  rotate-45    text-white  uppercase font-bold  z-50;
 }
+.icon__toggler {
+  @apply text-4xl  absolute -left-1 -bottom-1  transition-all;
+}
 
 .header {
   @apply p-2 px-5 transition-all w-full bg-white h-16 flex justify-between flex-row-reverse items-center   shadow-lg   rounded-b-lg overflow-hidden;
@@ -76,4 +79,13 @@
 
 .show__module {
   @apply scale-100 translate-y-0 opacity-100;
+}
+.dropdown {
+  @apply z-50     transition-all hover:shadow-lg hover:scale-105  before:-top-1 before:right-1/2 before:left-1/2 before:rotate-45 before:w-3 before:h-3 before:bg-white before:absolute  before:z-0  bg-white shadow-md w-36  rounded-md;
+}
+.item__drop {
+  @apply p-1 w-full cursor-pointer text-slate-700 hover:text-slate-900  hover:bg-gray-100 rounded-sm transition-all  flex items-center justify-end;
+}
+.btn__dropdown{
+@apply text-2xl cursor-pointer text-slate-700 hover:text-slate-800
 }

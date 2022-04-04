@@ -10,7 +10,8 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>افزودن شهر</title>
 </head>
-<body class="  sm:h-[100vh]  bg-gray-50   sm:p-5 ">
+
+<body class="  h-[100vh]  bg-gray-50   sm:p-5 ">
     <div class=" rounded-xl relative mb-3 h-full overflow-hidden w-full   flex  flex-row-reverse ">
 
         <div class="side__bar    scrollbar sm:scrollbar-thin    z-50  sm:relative sm:w-1/5 w-0 fixed   ">
@@ -303,7 +304,8 @@
             <div class="parent__module  invisible ">
                 <div
                     class="module w-2/3 h-1/2 bg-gray-100 rounded-md opacity-0 overflow-hidden scale-50 -translate-y-56 transition-all  duration-400 ">
-                    <div class="w-full h-1/6 bg-grea flex flex-row-reverse sm:flex-row items-center justify-between px-5 ">
+                    <div
+                        class="w-full h-1/6 bg-grea flex flex-row-reverse sm:flex-row items-center justify-between px-5 ">
                         <button class="btn__close text-center rounded-full ">
                             <i
                                 class='bx bx-x text-3xl p-1 rounded-full text-red-500 hover:bg-red-500 hover:text-white transition-all  '></i>
@@ -344,9 +346,8 @@
 
             <header class="header relative">
 
-                <button class="toggler   ">
-                    <i
-                        class='icon__toggler'></i>
+                <button class="toggler">
+                    <i class='icon__toggler bx bx-chevron-left bx-rotate-45  rotate-[130deg] '></i>
 
                 </button>
 
@@ -381,22 +382,22 @@
                 <!-- start filter -->
                 <div class=" w-full rounded-sm border mt-8 flex justify-around flex-row-reverse  p-5">
                     <button
-                        class="btn__module py-2 rounded-md px-5 text-center text-white bg-green-500 hover:scale-105 transition-all">
+                        class="btn__module py-1 px-2  sm:py-2 rounded-md sm:px-5 text-center text-white bg-green-500 hover:scale-105 transition-all">
                         افزودن
                     </button>
 
-                    <div class=" p-1 border rounded-md w-1/4 flex justify-between items-center  shadow-xl">
-                        <button class=" p-1 px-5  text-white text-center   bg-purple-500 rounded-md">
+                    <div class=" p-1 border sm:w-2/4 lg:w-1/4 rounded-md  flex justify-between items-center  shadow-xl">
+                        <button class=" p-1 px-5 mx-1 text-white text-center   bg-purple-500 rounded-md">
                             نمایش
                         </button>
 
-                        <button class=" w-7 h-7 text-center rounded-md text-white bg-blue-500">
+                        <button class=" w-7 h-7 text-center mx-1 rounded-md text-white bg-blue-500">
                             +
                         </button>
                         <span class=" p-1  ">
                             20
                         </span>
-                        <button class="  w-7 h-7 text-center rounded-md text-white bg-blue-500">
+                        <button class="  w-7 h-7 text-center mx-1 rounded-md text-white bg-blue-500">
                             -
                         </button>
                     </div>
@@ -425,8 +426,65 @@
 
 
                         </tr>
-                        <tr class="border">
+                        <tr class="border hover:bg-gray-100">
+                            <td class="border-l p-5 flex justify-center items-center relative">
+                                <i
+                                    class='btn__dropdown   bx bx-dots-vertical-rounded'></i>
+
+                                <div
+                                    class="  dropdown invisible absolute  right-1/5  -bottom-24  ">
+                                    <ul class=" text-right w-fullv p-1 mt-2">
+                                        <li
+                                            class="item__drop">
+                                            <a href="#" class=" mx-1"> شهرهای من</a>
+                                            <i class='bx bxs-city'></i>
+                                        </li>
+                                        <li
+                                            class="item__drop">
+                                            <a href="#" class=" mx-1">ویرایش</a>
+                                            <i class='bx bx-edit-alt'></i>
+                                        </li>
+                                        <li
+                                            class="item__drop">
+                                            <a href="#" class=" mx-1">حذف</a>
+                                            <i class='bx bx-trash'></i>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </td>
                             <td class="border-l p-5"></td>
+                            <td class="border-l p-5"></td>
+                            <td class="border-l p-5"></td>
+                            <td class="border-l p-5"></td>
+                        </tr>
+                        <tr class="border hover:bg-gray-100">
+                            <td class="border-l p-5 flex justify-center items-center relative">
+                                <i
+                                    class='btn__dropdown  bx bx-dots-vertical-rounded'></i>
+
+                                <div
+                                    class="  dropdown invisible absolute  right-1/5  -bottom-24  ">
+                                    <ul class=" text-right w-fullv p-1 mt-2">
+                                        <li
+                                            class=" item__drop">
+                                            <a href="#" class=" mx-1"> شهرهای من</a>
+                                            <i class='bx bxs-city'></i>
+                                        </li>
+                                        <li
+                                            class=" item__drop">
+                                            <a href="#" class=" mx-1">ویرایش</a>
+                                            <i class='bx bx-edit-alt'></i>
+                                        </li>
+                                        <li
+                                            class=" item__drop">
+                                            <a href="#" class=" mx-1">حذف</a>
+                                            <i class='bx bx-trash'></i>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </td>
                             <td class="border-l p-5"></td>
                             <td class="border-l p-5"></td>
                             <td class="border-l p-5"></td>
