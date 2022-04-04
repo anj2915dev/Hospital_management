@@ -8,6 +8,10 @@ const iconDown = document.querySelectorAll(".icon__down");
 const toglerMenu = document.querySelectorAll(".togller__menu");
 const iconMenu = document.querySelectorAll(".icon__menu");
 const toltip__menu = document.querySelector(".toltip__menu");
+const parentModule=document.querySelector(".parent__module")
+const btnShowModule=document.querySelector(".btn__module")
+const btnCloseModule=document.querySelector(".btn__close")
+const module=document.querySelector(".module")
 
 // togller sideBar
 toggler.addEventListener("click", () => {
@@ -66,3 +70,16 @@ toggler.addEventListener(
   },
   false
 );
+
+// start 
+btnShowModule.addEventListener("click", ()=>{
+  parentModule.classList.toggle("invisible")
+
+  module.classList.add("show__module")
+})
+btnCloseModule.addEventListener("click",()=>{
+  parentModule.classList.add("invisible")
+  parentModule.classList.toggle("flex")
+  module.classList.remove("show__module")
+
+})

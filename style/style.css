@@ -69,3 +69,11 @@
 .text__content {
   @apply text-2xl  text-[#919ba5];
 }
+
+.parent__module {
+  @apply fixed sm:absolute flex justify-center items-center transition-all duration-200 bg-transparent__gray z-50 top-0 left-0   w-full h-full;
+}
+
+.show__module {
+  @apply scale-100 translate-y-0 opacity-100;
+}
